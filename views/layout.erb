@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ComplainGPT</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      color: #444;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    a {
+      color: #FF1509;
+    }
+
+    button {
+      background: linear-gradient(rgb(255, 49, 24) 0%, rgb(216, 25, 9) 51.22%, rgb(191, 10, 0) 100%);
+      color: #fff;
+      border: 1px solid #FF1509;
+      box-shadow: 0 2px 3px #ddd;
+      font-weight: 500;
+      font-size: .9rem;
+      display: inline-block;
+      padding: 15px 30px;
+      border-radius: 3px;
+    }
+
+    button:hover {
+      opacity: 0.9;
+      box-shadow: 0 2px 3px #aaa;
+    }
+
+    button:active {
+      box-shadow: 0 1px 2px #ddd;
+    }
+
+    input {
+      border: 1px solid #aaa;
+      font-size: 1.5rem;
+      padding: 2px;
+      border-radius: 3px;
+      padding: 0.5rem;
+      display: inline-block;
+    }
+
+    input:focus, input:active {
+      border-color: #FF1509;
+    }
+
+    input, button {
+      font-family: sans-serif;
+      vertical-align: middle;
+    }
+
+    input::placeholder {
+      color: #ccc;
+    }
+
+    label {
+      font-size: larger;
+      display: block;
+      margin-bottom: .5rem;
+      color: #888;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+    }
+
+    footer {
+      border-top: 1px solid #ccc;
+      padding: 3rem;
+      margin-top: 5rem;
+    }
+  </style>
+</head>
+<body>
+  <%= yield %>
+</body>
+</html>
